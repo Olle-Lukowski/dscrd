@@ -10,7 +10,7 @@ class Webhook:
             "content": message,
             "tts": tts,
             "embeds": embeds,
-            "allowed_mentions": allowed_mentions
+            "allowed_mentions": allowed_mentions,
             "message_reference": message_reference
         }
         return requests.post(self.url, json=data)

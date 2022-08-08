@@ -9,7 +9,7 @@ def create_message_reference(message_id: str = "", channel_id: str = "", guild_i
     message_reference = {
         "message_id": message_id,
         "channel_id": channel_id,
-        "guild_id": guild_id
+        "guild_id": guild_id,
         "fail_if_not_exists": fail_if_not_exists
     }
     return message_reference
