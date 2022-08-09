@@ -10,8 +10,8 @@ def create_embed(title: str = "", type: str = "rich", description: str = "", url
     footer: embed footer object, footer information
     image: embed image object, image information
     thumbnail: embed thumbnail object, thumbnail information
-    video: embed video object, video information
-    provider: embed provider object, provider information
+    video: embed video object, video information (does not do anything for webhooks)
+    provider: embed provider object, provider information (does not do anything for webhooks)
     author: embed author object, author information
     fields: list of embed field objects, fields information
     """
@@ -52,9 +52,9 @@ def create_embed_image(url: str = "", proxy_url: str = "", height: int = 0, widt
     """
     Create an image object.
     url: str, url of the image (only http(s) and attachment(s))
-    proxy_url: str, proxy url of the image
-    height: int, height of the image
-    width: int, width of the image
+    proxy_url: str, proxy url of the image (does not do anything for webhooks)
+    height: int, height of the image (does not do anything for webhooks)
+    width: int, width of the image (does not do anything for webhooks)
     """
     image = {
         "url": url,
